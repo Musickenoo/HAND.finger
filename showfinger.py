@@ -60,14 +60,16 @@ while True:
                        if (cy20 > cy19) :
                          Nfing = 0
                  
-            elif (cy20 > cy19) :
-                Nfing = 3
-                if (cy16 > cy15) :
-                    Nfing = 2
-                    if (cy12 > cy11) :
+                 elif (cy20 > cy19) :
+                   Nfing = 3
+                   if (cy16 > cy15) :
+                      Nfing = 2
+                      if (cy12 > cy11) :
                         Nfing = 1
                         if (cy8 > cy7) :
                             Nfing = 0
+                
+                
             elif(cy12 > cy11) :
                 if (cy16 > cy15):
                   Nfing = "I LOVE YOU"
