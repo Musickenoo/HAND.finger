@@ -59,12 +59,23 @@ while True:
                        Nfing = 1
                        if (cy20 > cy19) :
                          Nfing = 0
-            
+                 
+            elif (cy20 > cy19) :
+                Nfing = 3
+                if (cy16 > cy15) :
+                    Nfing = 2
+                    if (cy12 > cy11) :
+                        Nfing = 1
+                        if (cy8 > cy7) :
+                            Nfing = 0
+            elif(cy12 > cy11) :
+                if (cy16 > cy15):
+                  Nfing = "I LOVE YOU"
             else:
                  Nfing = 5
                  
             mpDraw.draw_landmarks(img, handLms, mpHands.HAND_CONNECTIONS)
      
-     cv2.putText(img, str(int(Nfing)),(10,70), cv2.FONT_HERSHEY_PLAIN, 3,(255, 0, 255),3)
+     cv2.putText(img, str(str(Nfing)),(10,70), cv2.FONT_HERSHEY_PLAIN, 3,(255, 0, 255),3)
      cv2.imshow("Image", img)
      cv2.waitKey(1)                  
